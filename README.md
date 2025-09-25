@@ -42,7 +42,9 @@ sudo apt upgrade -y
 bash
 sudo apt install -y python3 python3-pip python3-venv mosquitto mosquitto-clients
 
-**Step 3: Install **InfluxDB**
+**Step 3: Install **
+
+**InfluxDB**
 bash
 
 # Add InfluxDB repository
@@ -225,5 +227,6 @@ dht22-sensor-logger/
 ├── APIInfluxDB.json          # Configuration file (create this)
 ├── requirements.txt          # Python dependencies
 └── README.md                # This file
+
 
 
