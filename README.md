@@ -1,4 +1,5 @@
 **DHT22 Sensor Data Logger with MQTT and InfluxDB**
+
 A Python script that reads temperature and humidity data from a DHT22 sensor on Raspberry Pi, publishes it to MQTT, and stores it in InfluxDB.
 
 Features
@@ -12,14 +13,16 @@ Error Handling: Robust error handling for sensor read failures and connection is
 
 Configurable: Easy configuration through JSON file for InfluxDB connection
 
-Prerequisites
+**Prerequisites**
+
 Raspberry Pi with GPIO pins
 
 DHT22 temperature and humidity sensor
 
 Internet connection for package installation
 
-Hardware Setup
+**Hardware Setup**
+
 Connect the DHT22 sensor to your Raspberry Pi:
 
 VCC pin to 3.3V
@@ -28,7 +31,7 @@ GND pin to Ground
 
 DATA pin to GPIO4 (physical pin 7)
 
-Software Installation
+**Software Installation**
 
 **Step 1: Update System Packages**
 bash
@@ -222,4 +225,5 @@ dht22-sensor-logger/
 ├── APIInfluxDB.json          # Configuration file (create this)
 ├── requirements.txt          # Python dependencies
 └── README.md                # This file
+
 
