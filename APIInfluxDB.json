@@ -1,0 +1,6 @@
+{
+  "INFLUX_URL": "http://localhost:8086",
+  "INFLUX_TOKEN": "W7Acxc1eZW5d6gqjfazmvuToWscHsRpZ8JkW2239eu5zYXt0PqkZQ8TRenduM5Pj4ThHVuG2Q2igZZ_d9Bcciw==",
+  "INFLUX_ORG": "ATB",
+  "INFLUX_BUCKET": "temp"
+}
