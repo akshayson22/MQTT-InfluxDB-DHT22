@@ -254,5 +254,5 @@ The project has a straightforward file structure:
 dht22-sensor-logger/
 ├── sensor_logger.py          # Main script
 ├── APIInfluxDB.json          # Configuration file (create this)
-├── requirements.txt          # Python dependencies
 └── README.md                 # This file
+
