@@ -1,8 +1,8 @@
-#**DHT22 Sensor Data Logger with MQTT and InfluxDB**
+#DHT22 Sensor Data Logger with MQTT and InfluxDB
 
 A Python script that reads temperature and humidity data from a DHT22 sensor on Raspberry Pi, publishes it to MQTT, and stores it in InfluxDB.
 
-#**Features**
+#Features
 Real-time Monitoring: Continuously reads temperature and humidity data from DHT22 sensor
 
 MQTT Integration: Publishes sensor data to MQTT broker for distributed systems
@@ -13,7 +13,7 @@ Error Handling: Robust error handling for sensor read failures and connection is
 
 Configurable: Easy configuration through JSON file for InfluxDB connection
 
-#**Prerequisites**
+#Prerequisites
 
 Raspberry Pi with GPIO pins
 
@@ -21,7 +21,7 @@ DHT22 temperature and humidity sensor
 
 Internet connection for package installation
 
-#**Hardware Setup**
+#Hardware Setup
 
 Connect the DHT22 sensor to your Raspberry Pi:
 
@@ -31,20 +31,20 @@ GND pin to Ground
 
 DATA pin to GPIO4 (physical pin 7)
 
-#**Software Installation**
+#Software Installation
 
 #**Step 1: Update System Packages**
 bash
 sudo apt update
 sudo apt upgrade -y
 
-#**Step 2: Install Required System Packages**
+**Step 2: Install Required System Packages**
 bash
 sudo apt install -y python3 python3-pip python3-venv mosquitto mosquitto-clients
 
 **Step 3: Install **
 
-#**InfluxDB**
+#InfluxDB
 bash
 
 # Add InfluxDB repository
@@ -204,7 +204,7 @@ try:
 except Exception as e:
     print(f'Error: {e}')
 "
-**Data Visualization**
+#Data Visualization
 You can visualize the data using:
 
 Grafana: Connect to InfluxDB datasource
@@ -213,20 +213,21 @@ InfluxDB UI: Built-in dashboard tools
 
 Chronograf: InfluxData's visualization tool
 
-Example Grafana Query:
+#Example Grafana Query:
 text
 FROM temperature_humidity
 SELECT mean("temperature") AS "Temperature", mean("humidity") AS "Humidity"
 WHERE $timeFilter
 GROUP BY time($__interval)
 
-**File Structure**
+#File Structure
 text
 dht22-sensor-logger/
 ├── sensor_logger.py          # Main script
 ├── APIInfluxDB.json          # Configuration file (create this)
 ├── requirements.txt          # Python dependencies
 └── README.md                # This file
+
 
 
 
